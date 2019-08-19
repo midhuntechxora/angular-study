@@ -1,0 +1,16 @@
+<h2>Employee Detail</h2>
+<h3>{{errorMsg}}</h3>    
+<ul  class="items">
+  <li>
+      <span class="badge">{{employeeID}}</span>{{employeeID}}
+  </li>
+</ul>
+<p>
+  <button (click)="showContact()">View</button>
+</p>
+<router-outlet></router-outlet>
+<p>
+<button (click)="goPrevious()" routerLinkActive="active">Prev</button>
+<button (click)="goNext()" routerLinkActive="active">Next</button>
+<button (click)="goToDepartments()" routerLinkActive="active">Back</button>
+</p>
